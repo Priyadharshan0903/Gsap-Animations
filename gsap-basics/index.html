@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First GSAP Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <script>
+      // Create a tween to animate the box
+      gsap.to("#box", {
+        duration: 6, // Duration of the animation (in seconds)
+        x: 200, // Move the box horizontally by 200 pixels
+        rotation: 480, // Rotate the box 360 degrees
+        backgroundColor: "gray", // Change background color to blue
+        //ease: "power2.inOut",
+        // Easing function
+        ease: "back",
+      });
+      /** gsap.from("#box", {
+        duration: 6,
+        x: 200,
+        rotation: 480,
+        backgroundColor: "gray",
+        ease: "back",
+      });*/
+      /**  gsap.fromTo(
+        "#box",
+        {
+          duration: 100,
+          x: -100,
+          opacity: 0,
+        },
+        {
+          x: 100,
+          opacity: 1,
+          ease: "elastic",
+        }
+      );*/
+    </script>
+  </body>
+</html>
