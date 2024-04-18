@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Carpenter';
+    src: url('Carpenter-Regular.eot');
+    src: local('Carpenter Regular'), local('Carpenter-Regular'),
+        url('Carpenter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Carpenter-Regular.woff2') format('woff2'),
+        url('Carpenter-Regular.woff') format('woff'),
+        url('Carpenter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
